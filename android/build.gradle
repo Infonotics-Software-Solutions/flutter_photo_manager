@@ -112,8 +112,8 @@ android {
     logger.info("Using java ${javaVersion} at android.compileOptions.sourceCompatibility and android.compileOptions.targetCompatibility in photo_manager.")
 
     compileOptions {
-        sourceCompatibility javaVersion
-        targetCompatibility javaVersion
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     sourceSets {
@@ -121,7 +121,7 @@ android {
     }
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 19
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 }
